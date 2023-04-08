@@ -6,7 +6,7 @@ A new Flutter project.
 
 This project is a multi flavor app created using - [flutter_flavorizr](https://pub.dev/packages/flutter_flavorizr).
 
-# How to generate Android apk or appbundle for different flavors
+# How to generate Android apk or appbundle for different app flavors
 
 Driver Dev:
 
