@@ -7,6 +7,8 @@ enum Flavor {
   passenger_prod,
 }
 
+enum AppType { driver, passenger }
+
 class F {
   static Flavor? appFlavor;
 
@@ -28,6 +30,22 @@ class F {
         return 'Passenger Production';
       default:
         return 'title';
+    }
+  }
+
+  static AppType get appType {
+    switch (F.appFlavor) {
+      case Flavor.driver_dev:
+      case Flavor.driver_stag:
+      case Flavor.driver_prod:
+        return AppType.driver;
+      case Flavor.passenger_dev:
+      case Flavor.passenger_stag:
+      case Flavor.passenger_prod:
+        return AppType.passenger;
+
+      default:
+        return AppType.driver;
     }
   }
 }

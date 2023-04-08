@@ -9,8 +9,21 @@ class MyHomePage extends StatelessWidget {
         title: Text(F.title),
       ),
       body: Center(
-        child: Text(
-          'Hello ${F.title}',
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              '${F.appType.name.toUpperCase()}',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Hello ${F.title}',
+            ),
+          ],
         ),
       ),
     );
