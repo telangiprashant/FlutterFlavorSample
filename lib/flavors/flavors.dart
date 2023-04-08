@@ -30,5 +30,4 @@ class F {
         return 'title';
     }
   }
-
 }
