@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_driver_dev.dart
+ASSET_PREFIX=driver_dev
+BUNDLE_NAME=Driver
+BUNDLE_DISPLAY_NAME=Driver
